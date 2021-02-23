@@ -820,9 +820,11 @@
   {
     \__ecnu_fixed_width_box:nn { \textwidth }
       {
-        \zihao { 4 }
-        \theyear \c__ecnu_thesisInfo_tl \hfill
-        \c__ecnu_schoolNum_tl \c__ecnu_colon_tl \underline{10269}
+        \textbf{
+          \zihao { 4 }
+          \theyear \c__ecnu_thesisInfo_tl \hfill
+          \c__ecnu_schoolNum_tl \c__ecnu_colon_tl \underline{10269}
+        }
       }
   }
 %% logo图导入接口

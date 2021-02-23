@@ -440,6 +440,7 @@
   }
 
 % 章节标号
+\setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{5}
 \__ecnu_msg_new:nn { unknown-value }
   { The~ value~ "\l_keys_value_tl"~ is~ unknown. }

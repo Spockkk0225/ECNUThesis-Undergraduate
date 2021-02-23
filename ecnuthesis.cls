@@ -1129,7 +1129,7 @@
 
 \NewDocumentCommand \frontmatter { }
   {
-    \cleardoublepage\pagenumbering{roman}
+    \cleardoublepage\pagenumbering{Roman}
   }
 \NewDocumentCommand \mainmatter { }
   {

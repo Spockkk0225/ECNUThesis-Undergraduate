@@ -161,15 +161,15 @@
   }
 \pagestyle{fancy}
   \fancyhead[L,R]       { }
-  \fancyhead[C]         { \small 华东师范大学 \enrollYear 级本科毕业论文/设计 }
-  \fancyfoot[C]         { \small \thepage }
+  \fancyhead[C]         { \color{gray} \small 华东师范大学 \enrollYear 级本科毕业论文/设计 }
+  \fancyfoot[C]         { \color{gray} \small \thepage }
   \fancyfoot[L,R]       { }
   \headheight = 13 pt
 \fancypagestyle{plain} 
   {
     \fancyhead[L,R]     { }
-    \fancyhead[C]       { \small 华东师范大学 \enrollYear 级本科毕业论文/设计 }
-    \fancyfoot[C]       { \small \thepage }
+    \fancyhead[C]       { \color{gray} \small 华东师范大学 \enrollYear 级本科毕业论文/设计 }
+    \fancyfoot[C]       { \color{gray} \small \thepage }
     \fancyfoot[L,R]     { }
     \headheight = 13 pt
   }

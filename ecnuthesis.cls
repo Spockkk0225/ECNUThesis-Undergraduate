@@ -1040,14 +1040,14 @@
     \__ecnu_keywords:nNn
       { \sffamily \c__ecnu_name_keywords_tl \c__ecnu_colon_tl }
       \l__ecnu_info_keywords_clist { ,~ }
-    \clearpage{\thispagestyle{empty}\cleardoublepage}
+    % \clearpage{\thispagestyle{empty}\cleardoublepage}
   }
 \cs_new_protected:Npn \__ecnu_abstractEN_end:
   {
     \__ecnu_keywords:nNn
       { \sffamily \c__ecnu_name_keywordsEN_tl \c__ecnu_colon_tl }
       \l__ecnu_info_keywordsEN_clist { ,~ }
-    \clearpage{\thispagestyle{empty}\cleardoublepage}
+    % \clearpage{\thispagestyle{empty}\cleardoublepage}
   }
 % 目录
 \tl_const:Nn \c__ecnu_name_toc_tl { 目录 }

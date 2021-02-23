@@ -2,6 +2,8 @@
 
 [![](https://img.shields.io/badge/Overleaf-ECNUthesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/ecnuthesis-latex-thesis-template-for-east-china-normal-university/szppdtkvgvpk)
 
+> This repository is forked from [Koyamin/ECNUThesis-Undergraduate](https://github.com/Koyamin/ECNUThesis-Undergraduate). I just make some changes to satisfy the latest format requirements.
+
 ### 华东师范大学本科生学士学位论文模版
 
 本模版使用 LaTeX3 重构了[YijunYuan](https://github.com/YijunYuan) 的 [ECNU-Undergraduate-LaTeX](https://github.com/YijunYuan/ECNU-Undergraduate-LaTeX)，
@@ -74,7 +76,7 @@ latexmk -xelatex thesis
 `style` 类用于简单设置论文格式。具体的设置选项如下所示。
 
 - `footnote  = plain|circled` 表示脚注编号样式。
-    
+  
     可用选项为 `footnote = plain|circled`。
 
     - `plain`表示脚注的编号仅为数字，
@@ -83,7 +85,7 @@ latexmk -xelatex thesis
     (默认选项为 `plain` )
 
 - `numbering = arabic|alpha|chinese` 表示章节编号样式。
-    
+  
     可用选项为 `numbering = arabic|alpha|chinese`。
     
     -  `arabic`    使用数字进行编号 (即理科要求)，
@@ -93,7 +95,7 @@ latexmk -xelatex thesis
     (默认选项为 `arabic` )
 
 - `fontCJK = fandol|windows|mac` 表示中文字体选择
-    
+  
     可用选项为 `fontCJK = fandol|windows|mac`。
 
     - `fandol`    使用 TeX 自带的 fandol 字体
@@ -103,11 +105,11 @@ latexmk -xelatex thesis
     (默认选项为 `fandol` )
 
 - `bibResource = {...}` 表示参考文献数据源。
-    
+  
     由于参考文献处理使用的是 biber + biblatex , 所以必须明确给出 `.bib` 后缀名
 
 - `logoResource = {...}` 表示封面插图数据源
-    
+  
     模版已自带，位于`./source/inner-cover(contains_font).eps`。
     
     (默认选项设置为 `./source/inner-cover(contains_font).eps`)

@@ -1014,7 +1014,7 @@
 \cs_new_protected:Npn \__ecnu_abstract_begin:
   { 
     \phantomsection
-    \addcontentsline{toc}{chapter}{摘要}
+    \addcontentsline{toc}{chapter}{摘要:}
     \__ecnu_title:V \l__ecnu_info_title_tl
     \mode_leave_vertical: \par \noindent
     \zihao{5}
@@ -1026,7 +1026,7 @@
 \cs_new_protected:Npn \__ecnu_abstractEN_begin:
   { 
     \phantomsection
-    \addcontentsline{toc}{chapter}{ABSTRACT}
+    \addcontentsline{toc}{chapter}{ABSTRACT:}
     \__ecnu_title:V \l__ecnu_info_titleEN_tl
     \mode_leave_vertical: \par \noindent
     \zihao{5}

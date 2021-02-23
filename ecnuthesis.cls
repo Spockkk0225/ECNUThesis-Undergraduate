@@ -4,7 +4,7 @@
   {Undergraduate Thesis Template for East China Normal University}
 \ProvidesExplClass{\ExplFileName}
   {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
-\RequirePackage { xparse, xtemplate, l3keys2e, pdfpages }
+\RequirePackage { xparse, xtemplate, l3keys2e }
 % 编译器只能选为 XeTeX
 \msg_new:nnn { ecnuthesis } { engine-unsupportd } 
   { \\
@@ -84,6 +84,8 @@
     xeCJKfntef,
     tocloft,
     hyperref,
+    pdfpages,
+    bicaption
   }
 \geometry
   {
@@ -433,11 +435,17 @@
 \RenewDocumentCommand \lstlistingname { } {源代码}
 
 % 图表名称格式
-\captionsetup
-  {
-    font     = small,
-    labelsep = quad
-  }
+\captionsetup[figure][bi-first]{name=图}
+\captionsetup[figure][bi-second]{name=Figure}
+
+\captionsetup[table][bi-first]{name=表}
+\captionsetup[table][bi-second]{name=Table}
+
+% \captionsetup
+%   {
+%     font     = small,
+%     labelsep = quad
+%   }
 
 % 章节标号
 \setcounter{tocdepth}{1}

@@ -1,4 +1,5 @@
-\documentclass[printMode]{ecnuthesis}
+\documentclass{ecnuthesis}
+% \documentclass[printMode]{ecnuthesis}
 % 模版选项:
 % printMode     是否开启打印模式, 若缺省则为关闭, 反之则为开启
 % 用法示例
@@ -68,7 +69,7 @@
     %   circled   脚注的编号为带圆圈数字 (仅限1-10)
     %   (默认选项为 plain )
     %
-    numbering = chinese,
+    numbering = arabic,
     % 章节编号样式
     % 可用选项:
     %   numbering = arabic|alpha|chinese
@@ -198,9 +199,8 @@ int main(int argc, char **argv) {
 \begin{figure}
     \centering
     \includegraphics[width=.5\textwidth]{example-image}
-    \caption{对于退休10年以内的人群，他们的金融需求有何特点？阻碍他们获取金融服务的“堵点”是什么？}
+    \bicaption{标题不能太长，否则不能居中}{English Caption}
   \end{figure}
-
 “在鼓励推广新技术、新方式的同时，要强调保留老年人熟悉的传统服\footnote{摸了摸了摸了}务方式，我想这是一个硬性要求。”国家发展改革委秘书长赵辰昕说，《实施方案》中已明确提出，保留传统金融服务方式，任何单位和个人不得以格式条款、通知、声明、告示等方式拒收现金。
 
 “人民币是我国法定货币，人民币现金是我国境内最基础的支付手段 \cite{Yang_Hy200215} ，任何单位和个人不得拒收。”中国人民银行科技司司长李伟说，央行会将“整治拒收现金工作”作为一项重点工作长期抓下去，强化日常监管，通过暗访巡查等多种方式开展摸底排查，同时建立违法主体名录库，重点跟踪、持续整治。

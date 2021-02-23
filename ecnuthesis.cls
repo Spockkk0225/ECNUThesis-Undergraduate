@@ -4,7 +4,7 @@
   {Undergraduate Thesis Template for East China Normal University}
 \ProvidesExplClass{\ExplFileName}
   {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
-\RequirePackage { xparse, xtemplate, l3keys2e }
+\RequirePackage { xparse, xtemplate, l3keys2e, pdfpages }
 % 编译器只能选为 XeTeX
 \msg_new:nnn { ecnuthesis } { engine-unsupportd } 
   { \\
@@ -1124,6 +1124,7 @@
       \makecoveri
     \end{titlepage}
     \restoregeometry
+    \includepdf[pages=-]{./source/commitment.pdf}
     \makeTOC
   }
 

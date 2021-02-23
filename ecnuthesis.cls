@@ -1067,7 +1067,8 @@
     \@starttoc{toc}
     \clearpage{\thispagestyle{empty}\cleardoublepage}
   }
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapleader}{\cftdotfill{1.0}}
+\renewcommand{\cftsecleader}{\cftdotfill{1.0}}
 \setlength{\cftbeforechapskip}{0pt}
 % 附录
 \tl_const:Nn \c__ecnu_name_appendix_tl         { 附录 }

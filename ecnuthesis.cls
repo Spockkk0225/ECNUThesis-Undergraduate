@@ -828,11 +828,9 @@
   {
     \__ecnu_fixed_width_box:nn { \textwidth }
       {
-        \textbf{
-          \zihao { 4 }
-          \theyear \c__ecnu_thesisInfo_tl \hfill
-          \c__ecnu_schoolNum_tl \c__ecnu_colon_tl \underline{10269}
-        }
+        \bfseries\zihao { 4 }
+        \theyear \c__ecnu_thesisInfo_tl \hfill
+        \c__ecnu_schoolNum_tl \c__ecnu_colon_tl \underline{10269}
       }
   }
 %% logo图导入接口
@@ -1035,7 +1033,7 @@
   { 
     \phantomsection
     \addcontentsline{toc}{chapter}{ABSTRACT:}
-    \__ecnu_title:V {\rmfamily\bfseries\l__ecnu_info_titleEN_tl}
+    \__ecnu_title:V { \rmfamily\bfseries\l__ecnu_info_titleEN_tl }
     \mode_leave_vertical: \par \noindent
     \zihao{5}
     \group_begin: 
@@ -1077,6 +1075,7 @@
   }
 \renewcommand{\cftchapleader}{\cftdotfill{1.0}}
 \renewcommand{\cftsecleader}{\cftdotfill{1.0}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{1.0}}
 \setlength{\cftbeforechapskip}{0pt}
 % 附录
 \tl_const:Nn \c__ecnu_name_appendix_tl         { 附录 }
@@ -1138,17 +1137,11 @@
   }
 
 \NewDocumentCommand \frontmatter { }
-  {
-    \cleardoublepage\pagenumbering{Roman}
-  }
+  { \cleardoublepage\pagenumbering{Roman} }
 \NewDocumentCommand \mainmatter { }
-  {
-    \cleardoublepage\pagenumbering{arabic}
-  }
+  { \cleardoublepage\pagenumbering{arabic} }
 \NewDocumentCommand \backmatter { }
-  {
-    \clearpage{\thispagestyle{empty}\cleardoublepage}
-  }
+  { \clearpage{\thispagestyle{empty}\cleardoublepage} }
 
 
 \keys_set:nn { ecnu / info }
@@ -1169,7 +1162,7 @@
     footnote     = plain,
     numbering    = arabic,
     fontCJK      = fandol,
-    logoResource = {./source/inner-cover(contains_font).eps}
+    logoResource = {},
   }
 
 % 提供接口

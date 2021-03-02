@@ -668,9 +668,13 @@
     style     = gb7714-2015,
     seconds   = true,
     hyperref  = true,
+    gbpub     = false,
+    gbpunctin = false
   } 
   { biblatex }
 \RequirePackage { biblatex }
+\DefineBibliographyStrings{english}{in={}}
+\DefineBibliographyStrings{english}{incn={}}
 \renewcommand*{\bibfont}{\zihao{5}}
 \cs_new_protected:Npn \__ecnu_biblatex_setup:
   {

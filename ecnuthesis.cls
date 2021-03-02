@@ -1044,7 +1044,7 @@
 \cs_new_protected:Npn \__ecnu_abstract_end:
   {
     \__ecnu_keywords:nNn
-      { \sffamily \c__ecnu_name_keywords_tl \c__ecnu_colon_tl }
+      { \rmfamily \c__ecnu_name_keywords_tl \c__ecnu_colon_tl }
       \l__ecnu_info_keywords_clist { ,~ }
     % \clearpage{\thispagestyle{empty}\cleardoublepage}
   }

@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/Overleaf-ECNUthesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/ecnuthesis-latex-thesis-template-for-east-china-normal-university/szppdtkvgvpk)
 
-> This repository is forked from [Koyamin/ECNUThesis-Undergraduate](https://github.com/Koyamin/ECNUThesis-Undergraduate). I just make some changes to satisfy the latest format requirements.
+> This repository is forked from [Koyamin/ECNUThesis-Undergraduate](https://github.com/Koyamin/ECNUThesis-Undergraduate). I just make some changes to satisfy the latest format requirements. This repo will be outdated soon.
 
 ### 华东师范大学本科生学士学位论文模版
 

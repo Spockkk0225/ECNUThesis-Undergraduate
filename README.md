@@ -2,7 +2,7 @@
 
 > Forked from [JJAYCHEN1e/ECNUThesis-Undergraduate](https://github.com/JJAYCHEN1e/ECNUThesis-Undergraduate).
 
-### 华东师范大学本科生学士学位论文模版
+### 华东师范大学本科生毕业论文 Latex模版
 
 本模板在原项目的基础上进行如下修改：
 

@@ -228,7 +228,8 @@
     \tl_set:Nn \g__ecnu_font_style_xits_bf_tl      { Bold             }
     \tl_set:Nn \g__ecnu_font_style_xits_it_tl      { Italic           }
     \tl_set:Nn \g__ecnu_font_style_xits_bfit_tl    { BoldItalic       }
-    \tl_set:Nn \g__ecnu_font_name_xits_math_rm_tl  { XITSMath-Regular }
+    %\tl_set:Nn \g__ecnu_font_name_xits_math_rm_tl  { XITSMath-Regular }
+    \tl_set:Nn \g__ecnu_font_name_xits_math_rm_tl  { STIXMath-Regular }
     \tl_set:Nn \g__ecnu_font_name_xits_math_bf_tl  { XITSMath-Bold    }
   }
   {
@@ -697,9 +698,10 @@
 \ctex_at_end_preamble:n { \__ecnu_biblatex_setup: }
 \NewDocumentCommand \PrintReference {} 
   {
-    \cleardoublepage
+    % \cleardoublepage
     \printbibliography
-    \clearpage{\thispagestyle{empty}\cleardoublepage}
+    % \clearpage{\thispagestyle{empty}\cleardoublepage}
+    \clearpage{\thispagestyle{empty}}
   }
 
 % 制作封面
@@ -1051,6 +1053,7 @@
       { \rmfamily \c__ecnu_name_keywords_tl \c__ecnu_colon_tl }
       \l__ecnu_info_keywords_clist { ,~ }
     % \clearpage{\thispagestyle{empty}\cleardoublepage}
+      \clearpage{\thispagestyle{empty}}
   }
 \cs_new_protected:Npn \__ecnu_abstractEN_end:
   {
@@ -1058,6 +1061,7 @@
       { \rmfamily\bfseries \c__ecnu_name_keywordsEN_tl \c__ecnu_colon_tl }
       \l__ecnu_info_keywordsEN_clist { ,~ }
     % \clearpage{\thispagestyle{empty}\cleardoublepage}
+      \clearpage{\thispagestyle{empty}}
   }
 % 目录
 \tl_const:Nn \c__ecnu_name_toc_tl { 目录 }
@@ -1096,7 +1100,8 @@
     \par
   }
 \cs_new_protected:Npn \__ecnu_appendix_end:
-  { \clearpage{\thispagestyle{empty}\cleardoublepage} }
+  { % \clearpage{\thispagestyle{empty}\cleardoublepage}
+    \clearpage{\thispagestyle{empty}} }
 \NewDocumentEnvironment { acknowledgement } { }
   { \__ecnu_acknowledgement_begin: } { \__ecnu_acknowledgement_end: }
 \cs_new_protected:Npn \__ecnu_acknowledgement_begin:
@@ -1109,7 +1114,8 @@
     \par
   }
 \cs_new_protected:Npn \__ecnu_acknowledgement_end:
-  { \clearpage{\thispagestyle{empty}\cleardoublepage} }
+  { %\clearpage{\thispagestyle{empty}\cleardoublepage} 
+    \clearpage{\thispagestyle{empty}} }
 % 封面命令封装
 \NewDocumentCommand \makecoveri { }
   {
@@ -1137,6 +1143,7 @@
     \end{titlepage}
     \restoregeometry
     \includepdf[pages=-]{./source/commitment.pdf}
+    \clearpage{\thispagestyle{empty}\cleardoublepage}
     \makeTOC
   }
 
@@ -1145,7 +1152,8 @@
 \NewDocumentCommand \mainmatter { }
   { \cleardoublepage\pagenumbering{arabic} }
 \NewDocumentCommand \backmatter { }
-  { \clearpage{\thispagestyle{empty}\cleardoublepage} }
+  { % \clearpage{\thispagestyle{empty}\cleardoublepage}
+    \clearpage{\thispagestyle{empty}} }
 
 
 \keys_set:nn { ecnu / info }

@@ -1,50 +1,23 @@
 # ECNUThesis-Undergraduate
 
-[![](https://img.shields.io/badge/Overleaf-ECNUthesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/ecnuthesis-latex-thesis-template-for-east-china-normal-university/szppdtkvgvpk)
-
-> This repository is forked from [Koyamin/ECNUThesis-Undergraduate](https://github.com/Koyamin/ECNUThesis-Undergraduate). I just make some changes to satisfy the latest format requirements. This repo will be outdated soon.
+> Forked from [JJAYCHEN1e/ECNUThesis-Undergraduate](https://github.com/JJAYCHEN1e/ECNUThesis-Undergraduate).
 
 ### 华东师范大学本科生学士学位论文模版
 
-本模版使用 LaTeX3 重构了 [YijunYuan](https://github.com/YijunYuan) 的 [ECNU-Undergraduate-LaTeX](https://github.com/YijunYuan/ECNU-Undergraduate-LaTeX)，
-并将个人信息的填写、个性化设置、命令、环境等进行了一定的封装，让使用者可以更加方便地使用 LaTeX 进行创作。
+本模板在原项目的基础上进行如下修改：
 
-## 使用环境
+1. 诚信承诺书改为独立项，加入 `\cleardoublepage`
 
-本模版只能使用 XeLaTeX 进行编译，使用其它 LaTeX 引擎将会导致编译失败。所以请安装最新版的 TeX Live ，并使用 XeLaTeX 进行编译。
+2. 正文、参考文献、致谢、附录全部不需要双面打印
 
-若您的个人计算机中仍安装了老旧的 CTeX 套装，请毫不犹豫地卸载它，并安装最新版的 TeX Live。
+    略影响美观，可以根据具体要求将注释掉的 `\cleardoublepage` 还原成独立项
 
-## 编译方法
+3. 摘要换页及页码问题
+    
+    最新的论文规范要求摘要双面打印，因此需要使用 `\clearpage` 而不是 `\cleardoublepage`
 
-假设 TeX 源文件为 `thesis.tex`，请在命令行中执行
-```
-latexmk -xelatex thesis
-```
-以编译。
+    （原来的代码直接注释掉了整行）
 
-## 使用方法
+4. 将XITS字体修改为STIX字体（部分），更符合常见习惯，例如 $\mathcal{G}$ 和 $\sum$
 
-请移步 [Wiki](https://github.com/Koyamin/ECNUThesis-Undergraduate/wiki) 阅读相关文档。
-
-## 不足与改进
-
-本模版仍有一些不足与值得改进之处。已知的不足如下所示。
-
-- 尾注功能未实现；
-- ……
-
-## 参考
-
-- Kunth D E. 的 The TeXBook: Computers & Typesetting.
-- CTEX.ORG 的 CTeX 宏集手册
-- CTEX.ORG 的 xeCJK 宏包
-- The LaTeX3 Project 的 The LaTeX3 Sources
-- [stone-zeng](https://github.com/stone-zeng) 的 [fduthesis](https://github.com/stone-zeng/fduthesis)
-- [YijunYuan](https://github.com/YijunYuan) 的 [ECNU-Undergraduate-LaTeX](https://github.com/YijunYuan/ECNU-Undergraduate-LaTeX)
-
-## 软件许可证
-
-华东师范大学校徽图案 (`inner-cover(contains_font).eps`) 版权归华东师范大学所有。
-
-其他部分使用 LPPL 授权。
+本项目仅作参考。
